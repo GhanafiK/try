@@ -1,0 +1,26 @@
+<section class="portfolio mb-3">
+  <div class="container pt-5 text-center">
+    <h2 class="text-uppercase mb-3 fs-1 fw-bolder">portfolio component</h2>
+    <div class="d-flex justify-content-center align-items-center mb-3">
+      <div class="line me-3 "></div>
+      <i class="fa-solid fa-star"></i>
+      <div class="line ms-3 "></div>
+    </div>
+    <div class="row g-5">
+      @for(img of images;track $index){
+        <div class="col-md-6 col-lg-4 ">
+          <div class="position-relative rounded-3 overflow-hidden" (click)="openBox(img)">
+            <img [src]="img" alt="" class="w-100  ">
+            <div class="img-card position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+              <i class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+    <div class="outer-box position-fixed top-0 bottom-0 start-0 end-0 z-3 d-flex justify-content-center align-items-center d-none" #boxImg (click)="closeBox($event)">
+      <img [src]="currentImg" alt="">
+    </div>
+    <h2 #imgBox></h2>
+  </div>
+</section>

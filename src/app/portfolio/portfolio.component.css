@@ -1,0 +1,27 @@
+.portfolio{
+  margin-top: 86px;
+  min-height: calc(-106px + 100vh);
+}
+.portfolio h2,.fa-solid{
+  color: rgb(44, 62, 80) ;
+}
+.line{
+  height: 4px;
+  width: 80px;
+  background-color: rgb(44, 62, 80);
+}
+.img-card{
+  background-color: #1abc9ce6;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity .6s ;
+}
+.img-card:hover{
+  opacity: 1;
+}
+.outer-box{
+  background-color: rgba( 13, 110, 253,.25);
+}
+.outer-box img{
+  width: 600px;
+}

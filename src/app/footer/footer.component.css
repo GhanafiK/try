@@ -1,0 +1,14 @@
+.footer-cards{
+  background-color: #2C3E50;
+}
+.icon{
+  border: 1px white solid;
+  border-radius: 50%;
+  padding: 10px;
+}
+.card{
+  --bs-card-border-width:0;
+}
+.copyright{
+  background-color: #1a252f;
+}

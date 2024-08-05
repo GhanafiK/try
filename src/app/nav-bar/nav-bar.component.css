@@ -1,0 +1,15 @@
+.navbar{
+  background-color: #2C3E50;
+  transition: padding .6s;
+
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.active{
+  background-color:#1abc9c;
+}
+
+a{
+  width: fit-content;
+}
